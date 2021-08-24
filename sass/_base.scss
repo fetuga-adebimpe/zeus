@@ -1,0 +1,48 @@
+$color-1: #262626;
+$color-2: #323232;
+$color-3: #f43930;
+$color-blue: #0057ff;
+$color-light: #f9f9f9;
+
+$font-2: 'Montserrat', sans-serif;
+$font-1: 'Cormorant', serif;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    display: block;
+
+}
+
+
+body {
+    font-family: $font-2;
+    color: $color-light;
+    font-weight: 300;
+    width: 100%;
+
+}
+
+.container {
+        max-width: 120rem;
+        min-height: 50rem;
+        background-color: #f5f5f5;
+        padding: 3rem;
+        display: grid;
+        grid-template-rows: repeat(9, min-content);
+        align-items: center;
+
+    & > * {
+        padding: 40px;
+        font-size: 1.5rem;
+    }
+}
