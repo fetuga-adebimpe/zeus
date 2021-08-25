@@ -91,9 +91,11 @@
     &-fa {
         color: #5f5c5c;
     }
+
     
     &-h3 {
         font-size: 1.9rem;
+        font-family: $font-1;
     }
 
     &-h1 {
@@ -112,7 +114,7 @@
 
     &-2-3-img {
         padding-top: 4rem;
-        height: 110%;
+        height: 100%;
         z-index: 10;
         position: relative;
     }

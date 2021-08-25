@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: inherit; }
 
@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   color: #f9f9f9;
-  font-weight: 300;
+  font-weight: 600;
   width: 100%; }
 
 .container {
@@ -25,8 +25,7 @@ body {
   grid-template-rows: repeat(9, min-content);
   align-items: center; }
   .container > * {
-    padding: 40px;
-    font-size: 1.5rem; }
+    font-size: .9rem; }
 
 .one {
   grid-row: 1 / 2;
@@ -89,7 +88,8 @@ body {
   .one-fa {
     color: #5f5c5c; }
   .one-h3 {
-    font-size: 1.9rem; }
+    font-size: 1.9rem;
+    font-family: "Cormorant", serif; }
   .one-h1 {
     font-family: "Cormorant", serif;
     font-size: 4.0rem;
@@ -102,7 +102,7 @@ body {
     font-size: 1.1rem; }
   .one-2-3-img {
     padding-top: 4rem;
-    height: 110%;
+    height: 100%;
     z-index: 10;
     position: relative; }
   .one-3-h4 {
@@ -117,9 +117,7 @@ body {
   grid-column: 1 / 11;
   background-color: #f9f9f9;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-  padding: 10rem;
+  grid-template-columns: repeat(9, 1fr);
   font-family: "Montserrat", sans-serif; }
   .two-h3 {
     font-size: 4rem;
@@ -128,7 +126,8 @@ body {
   .two-p {
     font-size: 1rem;
     color: rgba(50, 50, 50, 0.5);
-    margin-bottom: 2rem; }
+    text-align: left;
+    line-height: 1.5rem; }
   .two-a {
     color: #f43930;
     text-align: left;
@@ -137,61 +136,61 @@ body {
     line-height: .8rem;
     font-size: 1.3rem;
     font-weight: bold; }
-  .two-img {
-    width: 100%;
-    height: 100%; }
+  .two-div-1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 5; }
+  .two-div-2 {
+    grid-row: 1 / 2;
+    grid-column: 6 / 10;
+    line-height: 6rem; }
 
 .three {
+  grid-row: 3 / 4;
+  grid-column: 1 / 11;
   background-image: linear-gradient(rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.9)), url(../img/law-library1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  grid-row: 3 / 4;
-  grid-column: 1 / 11;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 2rem;
-  padding: 6rem;
-  width: 100%;
-  font-family: "Montserrat", sans-serif; }
+  width: 100%; }
   .three-div-1 {
     grid-row: 1 / 2;
-    grid-column: 1 / 3; }
+    grid-column: 2 / 5; }
   .three-div-2 {
-    grid-row: 1 / 3;
-    grid-column: 3 / 5;
-    border: 1px solid rgba(249, 249, 249, 0.5);
+    grid-row: 1 / 2;
+    grid-column: 6 / 10;
+    border: 1px solid rgba(249, 249, 249, 0.1);
     border-left: 0;
-    width: 60%;
     color: #f9f9f9;
-    justify-self: center; }
+    text-align: left; }
   .three-div-3 {
     grid-row: 2 / 3;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     font-size: 2rem; }
   .three-div-4 {
     grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     font-size: 2rem; }
   .three-div-5 {
     grid-row: 3 / 4;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     font-size: 2rem; }
   .three-div-6 {
     grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     font-size: 2rem; }
   .three-div-7 {
     grid-row: 3 / 4;
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
     font-size: 2rem; }
   .three-div-8 {
     grid-row: 3 / 4;
-    grid-column: 4 / 5;
+    grid-column: 5 / 6;
     font-size: 2rem; }
   .three-h2 {
     font-family: "Cormorant", serif;
-    width: 70%;
+    width: 100%;
     line-height: 4rem;
     font-size: 4rem; }
   .three-p {
@@ -216,20 +215,19 @@ body {
   background-color: #f9f9f9;
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  padding: 3rem; }
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
   .four-div-1 {
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    grid-column: 2 / 5;
     display: flex;
     flex-direction: column; }
   .four-div-2 {
     grid-row: 1 / 2;
-    grid-column: 2 / 3; }
+    grid-column: 6 / 10; }
   .four-div-3 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -294,7 +292,8 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  width: 100%; }
   .five-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
