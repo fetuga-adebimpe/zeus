@@ -5,11 +5,11 @@
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     font-family: "Montserrat", sans-serif;
-    
+    padding: 9rem 4rem;
  
    
     &-h3 {
-        font-size: 4rem;
+        font-size: 3rem;
         color: $color-1;
         font-family: $font-1;
     }

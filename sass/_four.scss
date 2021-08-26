@@ -4,101 +4,104 @@
     color: $color-1;
     background-color: $color-light;
     font-family: $font-2;
-   
+
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
-    &-div-1 {
+    &-divi {
         grid-row: 1 / 2;
-        grid-column: 2 / 5;
-        display: flex;
-        flex-direction: column;
+        grid-column: 2 / -1;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
     }
 
-    
+    &-div-1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
+    }
+
     &-div-2 {
         grid-row: 1 / 2;
         grid-column: 6 / 10;
     }
-    
-    &-div-3{
+
+    &-div {
         grid-row: 2 / -1;
         grid-column: 2 / -1;
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        width: 100%;
-        grid-gap: 1rem;
+        grid-gap: 2rem;
     }
 
+    
+    &-div-3 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+       
+    }
+    
     &-div-4 {
-        background-color: $color-1;
-        margin: 2rem;
-        padding: 2rem;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
     }
-
+    
     &-div-5 {
-        background-color: $color-1;
-        margin: 2rem;
-        padding: 2rem;
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
     }
-
+    
     &-div-6 {
-        background-color: $color-1;
-        margin: 2rem;
-        padding: 2rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
     }
-
+    
     &-div-7 {
-        background-color: $color-1;
-        margin: 2rem;
-        padding: 2rem;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
     }
-
+    
     &-div-8 {
-        background-color: $color-1;
-        margin: 2rem;
-        padding: 2rem;
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
     }
 
-    &-div-9 {
+    &-di {
         background-color: $color-1;
-        margin: 2rem;
-        padding: 2rem;
+        padding: 1rem;
+     
     }
-
-
-
-
-
 
     &-p {
         font-size: 1rem;
-        color: rgba($color: $color-2, $alpha: .5);
-        width: 60%;
+        color: rgba($color: $color-2, $alpha: 0.5);
+        width: 100%;
+        font-weight: 600;
+        line-height: 1.4rem;
     }
+
     &-h3 {
-        font-size: 4rem;
-        font-family: $font-1;
+        font-size: 3rem;
+        font-family: "Cormorant", serif;
         width: 60%;
-        line-height: 4rem;
+        line-height: 3rem;
+        font-weight: 500;
     }
     &-img {
         width: 100%;
     }
 
-    &-pp{
-        font-size: .9rem;
-        color: rgba($color: $color-light, $alpha: .5);
+    &-pp {
+        font-size: 0.9rem;
+        color: rgba($color: $color-light, $alpha: 0.5);
     }
 
     &-h4 {
         line-height: 5rem;
         color: $color-light;
     }
-   
+
     &-a {
         color: $color-3;
         text-align: start;
@@ -107,4 +110,5 @@
         font-size: 1rem;
     }
 
+   
 }
