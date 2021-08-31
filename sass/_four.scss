@@ -1,13 +1,13 @@
 .four {
+    padding: 11rem;
     grid-row: 4 / 5;
     grid-column: 1 / 11;
-    color: $color-1;
-    background-color: $color-light;
-    font-family: $font-2;
-
+    color: #262626;
+    background-color: #f9f9f9;
+    font-family: "Montserrat", sans-serif;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 15% repeat(2, 1fr);
 
     &-divi {
         grid-row: 1 / 2;

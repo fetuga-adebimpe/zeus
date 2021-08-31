@@ -17,8 +17,17 @@
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
-    "node-sass": "^6.0.0",
+    "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fetuga-adebimpe/zeus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fetuga-adebimpe/zeus/issues"
+  },
+  "homepage": "https://github.com/fetuga-adebimpe/zeus#readme"
 }
