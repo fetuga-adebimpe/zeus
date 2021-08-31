@@ -35,33 +35,31 @@
         grid-gap: 2rem;
     }
 
-    
     &-div-3 {
         grid-row: 1 / 2;
         grid-column: 1 / 2;
-       
     }
-    
+
     &-div-4 {
         grid-row: 1 / 2;
         grid-column: 3 / 4;
     }
-    
+
     &-div-5 {
         grid-row: 1 / 2;
         grid-column: 4 / 5;
     }
-    
+
     &-div-6 {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
     }
-    
+
     &-div-7 {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
     }
-    
+
     &-div-8 {
         grid-row: 2 / 3;
         grid-column: 3 / 4;
@@ -70,7 +68,6 @@
     &-di {
         background-color: $color-1;
         padding: 1rem;
-     
     }
 
     &-p {
@@ -82,11 +79,10 @@
     }
 
     &-h3 {
-        font-size: 3rem;
+        font-size: 5.3rem;
         font-family: "Cormorant", serif;
-        width: 60%;
-        line-height: 3rem;
-        font-weight: 500;
+        width: 100%;
+        line-height: 5rem;
     }
     &-img {
         width: 100%;
@@ -109,6 +105,4 @@
         line-height: 3rem;
         font-size: 1rem;
     }
-
-   
 }

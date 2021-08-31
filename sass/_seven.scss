@@ -8,20 +8,23 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     color: $color-light;
     font-family: $font-2;
+    padding: 9rem 17rem;
+    
 
-
-
+    & > * {
+      padding: 2rem;
+    }
   
   &-1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
 
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-family: $font-1;
-    line-height: 4rem;
+    line-height: 4.7rem;
   }
 
   &-2 {
@@ -35,7 +38,9 @@
       padding: .4rem;
       margin: .8rem;
       height: 40%;
-      text-align: center;
+      width: 40%;
+      align-items: center;
+      font-size: 1.4rem;
     }
     
     &-pp {
@@ -44,6 +49,9 @@
       background-color: $color-3;
       margin: .8rem;
       height: 40%;
+      width: 40%;
+      align-items: center;
+      font-size: 1.4rem;
     }
   }
 
@@ -52,8 +60,8 @@
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 40%, 1fr;
-    width: 80%;
     border: 1px solid rgba($color-light, .2);
+   
   }
 
   &-4 {
@@ -61,7 +69,6 @@
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 40%, 1fr;
-    width: 80%;
     border: 1px solid rgba($color-light, .2);
     
   }
@@ -71,7 +78,6 @@
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 40%, 1fr;
-    width: 80%;
     border: 1px solid rgba($color-light, .2);
   }
 
@@ -80,8 +86,6 @@
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 40%, 1fr;
-    width: 80%;
-    grid-gap: 2rem;
     border: 1px solid rgba($color-light, .2);
   }
 
@@ -99,10 +103,10 @@
     &::before {
       content: "\201D";
       position: absolute;
-      top: -8rem;
-      right: 1rem;
+      top: -9rem;
+      right: -2rem;
       font-size: 10rem;
-      color: $color-3;
+      color: #f43930;
     }
   }
 
@@ -127,18 +131,19 @@
   
  &-h3 {
    font-family: $font-1;
-   font-size: 3rem;
-   width: 60%;
+   font-size: 5rem;
+    line-height: 4.7rem;
  } 
 
  &-h4 {
    font-family: $font-1;
+  
  }
 }
 
 .pman {
   font-size: 1rem;
   color: rgba($color: $color-light, $alpha: .5);
-  line-height: 3rem;
+  line-height: 2.7rem;
 }
 
